@@ -20,7 +20,8 @@ function fingerPrint () {
 
 async function init () {
   await fingerPrint().then((res) => {
-    console.log(res)
+    console.log('fingerprint: ' + res)
+    document.cookie = "X-Rosetta-Fingerprint=" + res;
   })
 }
 
