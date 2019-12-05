@@ -11,7 +11,7 @@ module.exports = {
     filename: '[name].min.js',
   },
   optimization: {
-    minimize: true,
+    minimize: false,
     minimizer: [
       new TerserPlugin({
         sourceMap: true,
