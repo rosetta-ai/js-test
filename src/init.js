@@ -22,7 +22,7 @@ async function init () {
   await fingerPrint().then((res) => {
     let str = 'fingerprint: ' + res
     console.log(str)
-    document.cookie = "X-Rosetta-Fingerprint=" + res + "; SameSite=None; Secure";
+    document.cookie = "X-Rosetta-Fingerprint=" + res + "; SameSite=Strict;";
   })
 }
 
