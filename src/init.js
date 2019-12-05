@@ -1,10 +1,10 @@
 import axios from 'axios'
-import Fingerprint2 from 'fingerprintjs2'
+import fingerprint from 'fingerprintjs2'
 
 function fingerPrint () {
   return (new Promise((resolve) => {
-    fingerPrintJS2.get(components => {
-      const fp = fingerPrintJS2.x64hash128(
+    fingerprint.get(components => {
+      const fp = fingerprint.x64hash128(
         components
           .map(function (pair) {
             return pair.value
